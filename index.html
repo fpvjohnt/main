@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyTech Construction Services</title>
+  <link rel="stylesheet" href="/CSS/styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="scripts.js" defer></script>
+  <style>
+    .dropdown {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown a:hover {
+      background-color: #f1f1f1;
+    }
+  </style>
+  <script>
+    $(document).ready(function() {
+      $('nav ul li:nth-child(3)').hover(
+        function() { $(this).children('.dropdown').stop().slideDown(200); },
+        function() { $(this).children('.dropdown').stop().slideUp(200); }
+      );
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>SkyTech Construction Services</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="/Pages/MoreAboutUS.html">About</a></li>
+        <li><a href="#services">Services</a>
+          <div class="dropdown">
+            <a href="/Pages/Agriculture.html">Agriculture Drone</a>
+            <a href="/Pages/3DMapping.html">Mapping Service</a>
+            <a href="/Pages/Inspections.html">Drone Inspections</a>
+            <a href="/Pages/AppDesign.html">Drone Application Design for Search and Rescue</a>
+          </div>
+        </li>
+        <li><a href="/Pages/Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="video-background">
+      <video autoplay muted loop>
+        <source src="/Video/Revolutionizing Inspections with Drone Technology.mp4" type="video/mp4">
+      </video>
+      <div class="message">
+        <p>Elevating Success with Precision Mapping, Expert Inspection, Smart Agriculture, and Innovative Application Design</p>
+      </div>
+    </section>
+    <section class="why-choose-us">
+      <h2>Why Choose Us</h2>
+      <div class="columns-container">
+        <div class="column">
+          <h3>Agriculture</h3>
+          <p>Introducing our state-of-the-art agriculture drone service, designed to revolutionize modern farming and drive sustainable agricultural practices. We combine cutting-edge drone technology with advanced data analysis to provide farmers, agronomists, and agricultural consultants with accurate, real-time insights into crop health, growth patterns, and potential threats. Our service offers tailored solutions that improve crop yield, reduce costs, and optimize resource usage. By harnessing the power of aerial imagery and advanced analytics, we empower our clients to make data-driven decisions for sustainable and efficient farm management. Choose our agriculture drone service to experience a new era of precision agriculture and unlock your farm's full potential.</p>
+        </div>
+        <div class="column">
+          <h3>Mapping Service</h3>
+          <p>Discover our innovative mapping service, specifically designed to transform the way you plan, analyze, and manage your land and resources. Our cutting-edge mapping technology combines high-resolution aerial imagery with advanced geospatial data processing to deliver accurate and comprehensive maps for various industries, including agriculture, real estate, urban planning, and environmental management. Our user-friendly platform allows you to visualize, explore, and interact with your data like never before, providing you with actionable insights for informed decision-making. Our dedicated team of mapping experts is committed to offering customized solutions that cater to your unique requirements, ensuring optimal land use and resource allocation. Experience the power of precision mapping and elevate your land management strategy with our comprehensive mapping service.</p>
+        </div>
+        <div class="column">
+          <h3>Inspection</h3>
+          <p>Introducing our cutting-edge drone inspection service, designed to revolutionize the way you conduct inspections across various industries, including construction, infrastructure, energy, and insurance. By leveraging advanced drone technology and high-resolution imaging, we provide fast, accurate, and cost-effective inspections that minimize risk and maximize efficiency. Our experienced team of certified drone pilots and inspection specialists work closely with you to assess the condition of your assets, identify potential issues, and deliver comprehensive reports that enable informed decision-making. Whether you're inspecting buildings, bridges, solar panels, or pipelines, our drone inspection service ensures safety, compliance, and optimal performance of your assets. Embrace the future of inspections with our reliable and efficient drone inspection service.</p>
+        </div>
+        <div class="column">
+          <h3>Application Design</h3>
+          <p>Introducing our innovative drone application design service, specifically tailored for search and rescue operations. Our solution harnesses the power of advanced drone technology, cutting-edge sensor systems, and intelligent software algorithms to revolutionize the way search and rescue missions are conducted. Our customized drone solutions provide real-time aerial reconnaissance, thermal imaging, and GPS tracking to assist first responders in locating and aiding individuals in need, even in the most challenging terrains and conditions. With improved efficiency, reduced response times, and enhanced situational awareness, our drone application design empowers search and rescue teams to save lives and make a lasting impact. Experience the transformative potential of our drone technology and elevate your search and rescue capabilities with our specialized drone application design service.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

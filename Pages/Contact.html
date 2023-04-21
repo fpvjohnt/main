@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SKYTECH Construction Services</title>
+  <link rel="stylesheet" href="/CSS/contact.css">
+  <script>
+     function toggleMenu() {
+    const nav = document.querySelector("nav");
+    nav.classList.toggle("active");
+  }
+  </script>
+</head>
+<body>
+  <header>
+        <div class="logo">
+        <h1>SKYTECH CONSTRUCTION SERVICES</h1>
+      </div>
+      <nav>
+        <button class="hamburger-menu">&#9776;</button>
+  <ul class="nav-menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+      </nav>
+    </header>
+  <main>
+    <section class="contact-form">
+      <form action="send_email.php" method="post">
+        <label for="question-related">What is this question related to?</label>
+        <input type="text" id="question-related" name="question_related">
+        
+        <label for="interested-products">Which products are you interested in?</label>
+        <input type="text" id="interested-products" name="interested_products">
+        
+        <!-- Add the remaining inputs, labels, and submit button -->
+      </form>
+      
+    </section>
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <ul>
+        <li>Question 1</li>
+        <li>Question 2</li>
+        <li>Question 3</li>
+        <!-- Add more questions as needed -->
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <!-- Bottom Section -->
+  </footer>
+</body>
+</html>
